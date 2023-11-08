@@ -1,0 +1,18 @@
+<!--home page will display posts if there are any created!-->
+
+<div class="container">
+  <h1>Posts</h1>
+  <div *ngIf="posts && posts.length > 0">
+    <ul>
+      <li *ngFor="let post of posts">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+        <p>{{ post.departmentCode }}</p>
+        <button (click)="deletePost(post._id)">Delete Post</button>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!posts || posts.length === 0">
+    <p>No posts have been posted.</p>
+  </div>
+</div>

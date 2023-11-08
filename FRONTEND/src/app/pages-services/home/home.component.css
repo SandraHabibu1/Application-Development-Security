@@ -1,0 +1,42 @@
+/*CSS code for this component*/
+
+.container {
+  max-width: 360px;
+  margin: auto;
+  text-align: center;
+  padding: 8% 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  font-family: "Roboto", sans-serif;
+  background: #FFFFFF;
+}
+
+.container h1 {
+  font-family: "Roboto", sans-serif;
+  color: #b3b3b3;
+  font-size: 12px;
+  margin: 15px 0 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 26px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}

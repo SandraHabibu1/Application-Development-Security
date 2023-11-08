@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="register.component.css">
+<title> Register</title>
+</head>
+<body>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>Create a new account</h3>
+            <p>Please enter your details to create an account.</p>
+          </div>
+        </div>
+        <form class="login-form">
+          <input id="usernameId" type="text" placeholder="Username" [formControl]= "username"/>
+          <input id="firstNameId" type="text" placeholder="First Name"[formControl]= "firstName"/>
+          <input id="lastNameId" type="text" placeholder="Last Name"[formControl]= "lastName"/>
+          <input id="passwordId" type="password" placeholder="Password" [formControl]= "password"/>
+          <input id="condirmPasswordId" type="password" placeholder="Confirm Password"[formControl]= "confirmPassword"/>
+          <button id="registerBtn" (click)="onSubmit($event)">Sign Up</button>
+          <p class="message" routerLink="/login">Already have an account?<a href="#"> Login</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>
+<script type = "text/javascript" src="register.component.ts"></script>  
